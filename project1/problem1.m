@@ -5,11 +5,11 @@ function problem1(n)
 %
     tic; % Start timer.
     %
-    sum35 = 0;                           % Initialize solution sum.
-    for ii = 1:(n-1)                      % Test all numbers less than the input value.
-        if mod(ii, 3) == 0             % Test whether the number is divisible by 3
+    sum35 = 0;                   % Initialize solution sum.
+    for ii = 1:(n-1)             % Test all numbers less than the input value.
+        if mod(ii, 3) == 0       % Test whether the number is divisible by 3
             sum35 = sum35 + ii;  % and increment the sum if it is.
-        elseif mod(ii, 5) == 0      % Test whether the number is divisible by 5
+        elseif mod(ii, 5) == 0   % Test whether the number is divisible by 5
             sum35 = sum35 + ii;  % and increment the sum if it is.
         end
     end
