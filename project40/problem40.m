@@ -6,20 +6,20 @@ function problem40;
 %
     tic;
     %
-    champernowneStr = ''; % Initialize Champernowne string output variable
+    champernowneStr = '';  % Initialize Champernowne string output variable
     n = 1000000;                    % Set output string length
     ii = 1;  
     while strlength(champernowneStr) <= n
         appendNum = num2str(ii);
-        champernowneStr  = strcat(champernowneStr , appendNum);
-        ii = ii + 1;
-    end
+        champernowneStr  = strcat(champernowneStr , appendNum);  % Sequentially build string
+        ii = ii + 1;                                                                                                        % representing the Champernowne 
+    end                                                                                                                     % fraction until it's "n" digits long.
     %
-    d1 = str2double( champernowneStr(1));
+    d1 = str2double( champernowneStr(1));                                                 % Get d1
     fprintf('The 1st digit of Champernowne''s constant is %d \n', d1);
-    d10 = str2double( champernowneStr(10));
+    d10 = str2double( champernowneStr(10));                                            % Get d10
     fprintf('The 10th digit of Champernowne''s constant is %d \n', d10);
-    d100 = str2double( champernowneStr(100));
+    d100 = str2double( champernowneStr(100));                                        % Get d100 ... etc.
     fprintf('The 100th digit of Champernowne''s constant is %d \n', d100);
     d1000 = str2double( champernowneStr(1000));
     fprintf('The 1,000th digit of Champernowne''s constant is %d \n', d1000);
@@ -31,7 +31,7 @@ function problem40;
     fprintf('The 1,000,000th digit of Champernowne''s constant is %d \n', d1000000);
     %
     outputProduct = d1*d10*d100*d1000*d10000*d100000*d1000000;
-    fprintf('The product of these digits is %d \n', outputProduct);
+    fprintf('The product of these digits is %d \n', outputProduct);  % Print the answer.
     %
     toc;
 end
