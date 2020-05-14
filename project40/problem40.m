@@ -6,14 +6,14 @@ function problem40;
 %
     tic;
     %
-    champernowneStr = '';  % Initialize Champernowne string output variable
+    champernowneStr = '';           % Initialize Champernowne string output variable
     n = 1000000;                    % Set output string length
     ii = 1;  
     while strlength(champernowneStr) <= n
         appendNum = num2str(ii);
         champernowneStr  = strcat(champernowneStr , appendNum);  % Sequentially build string
-        ii = ii + 1;                                                                                                        % representing the Champernowne 
-    end                                                                                                                     % fraction until it's "n" digits long.
+        ii = ii + 1;                                             % representing the Champernowne 
+    end                                                          % fraction until it's "n" digits long.
     %
     d1 = str2double( champernowneStr(1));                                                 % Get d1
     fprintf('The 1st digit of Champernowne''s constant is %d \n', d1);
