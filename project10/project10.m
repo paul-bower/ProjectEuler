@@ -6,9 +6,9 @@ function project10(primeLimit)
     primeSum = int64(0);  % Initialize prime sum parameter
     %
     for ii = 1:(primeLimit-1)
-        if isprime(ii) == 1                         % For each natural number less than 
+        if isprime(ii) == 1           % For each natural number less than 
             primeSum = primeSum + ii; % the input limit value add it to the prime 
-        end                                                 % sum if it tests prime
+        end                           % sum if it tests prime
     end
     %
     % Output sum of primes
