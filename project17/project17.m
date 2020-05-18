@@ -9,8 +9,8 @@ function project17
 % Test 2: 342 (three hundred and forty-two) contains 23 letters.
 % Test 3: 115 (one hundred and fifteen) contains 20 letters.
 %
- tic; % Execution time timer
- %
+tic; % Execution time timer
+%
 % Define a set of cell arrays which contain text strings which will be
 % equated to parts of the input number
 onesWord = {'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'};
@@ -82,5 +82,6 @@ end % for loop
 %
 fprintf('The total number of characters contained in the concatented text of numbers between 1 and 1000 is %d. \n', totalStringLength);
 %
- toc;
+toc; % Output elapsed execution time
+%
 end
