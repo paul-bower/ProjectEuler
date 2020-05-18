@@ -10,7 +10,6 @@ function project20
     nFactorial = factorial(n);
     % Substitute 100 into factorial(n) and convert the resulting 100! number to a string
     sFactorial = char(subs(nFactorial, n, 100));
-    % number to a string
     %
     % Compute the sum of the digits in the 100! string
     sumDigits = 0;
